@@ -24,6 +24,27 @@ public class RandomiserController {
 
 
         }, velocityTemplateEngine);
+
+        get("/two", (req, res) -> {
+
+            Randomiser randomiser = new Randomiser();
+            String result = randomiser.randName();
+            String result2 = randomiser.randName();
+            HashMap<String, Object> model = new HashMap<>();
+            model.put("result", result);
+            model.put("result2", result2);
+            model.put("template", "two.vtl");
+
+            return new ModelAndView(model, "layout.vtl");
+
+
+        }, velocityTemplateEngine);
+
+
     }
+
+
+
+
 
 }

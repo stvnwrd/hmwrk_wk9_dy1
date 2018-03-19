@@ -10,6 +10,9 @@ public class Randomiser {
         names.add("Larry");
         names.add("Gary");
         names.add("Harry");
+        names.add("Terri");
+        names.add("Geri");
+
 
         Collections.shuffle(names);
         return names.get(0);
