@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3df6f533-29fc-4aed-b5ed-4df6c2f107e8" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/four.vtl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/three.vtl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/four.vtl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/target/classes/three.vtl" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RandomiserController.java" afterPath="$PROJECT_DIR$/src/main/java/RandomiserController.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Randomiser.class" afterPath="$PROJECT_DIR$/target/classes/Randomiser.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RandomiserController.class" afterPath="$PROJECT_DIR$/target/classes/RandomiserController.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
