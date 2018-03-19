@@ -4,7 +4,7 @@ import java.util.Collections;
 public class Randomiser {
 
 
-    public static String one() {
+    public static String randName() {
         ArrayList<String> names = new ArrayList<>();
         names.add("Barry");
         names.add("Larry");
@@ -13,6 +13,7 @@ public class Randomiser {
 
         Collections.shuffle(names);
         return names.get(0);
-
     }
+
+
 }

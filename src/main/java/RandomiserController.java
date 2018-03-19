@@ -15,11 +15,12 @@ public class RandomiserController {
         get("/one", (req, res) -> {
 
             Randomiser randomiser = new Randomiser();
-            String result = randomiser.one();
+            String result = randomiser.randName();
             HashMap<String, Object> model = new HashMap<>();
             model.put("result", result);
+            model.put("template", "one.vtl");
 
-            return new ModelAndView(model, "one.vtl");
+            return new ModelAndView(model, "layout.vtl");
 
 
         }, velocityTemplateEngine);
