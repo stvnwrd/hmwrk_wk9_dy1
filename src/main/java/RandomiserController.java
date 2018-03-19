@@ -41,6 +41,40 @@ public class RandomiserController {
         }, velocityTemplateEngine);
 
 
+
+        get("/three", (req, res) -> {
+
+            Randomiser randomiser = new Randomiser();
+            String result = randomiser.randName();
+            String result2 = randomiser.randName();
+            String result3 = randomiser.randName();
+            HashMap<String, Object> model = new HashMap<>();
+            model.put("result", result);
+            model.put("result2", result2);
+            model.put("result3", result3);
+            model.put("template", "three.vtl");
+
+            return new ModelAndView(model, "layout.vtl");
+
+        }, velocityTemplateEngine);
+
+        get("/four", (req, res) -> {
+
+            Randomiser randomiser = new Randomiser();
+            String result = randomiser.randName();
+            String result2 = randomiser.randName();
+            String result3 = randomiser.randName();
+            String result4 = randomiser.randName();
+            HashMap<String, Object> model = new HashMap<>();
+            model.put("result", result);
+            model.put("result2", result2);
+            model.put("result3", result3);
+            model.put("result4", result4);
+            model.put("template", "four.vtl");
+
+            return new ModelAndView(model, "layout.vtl");
+        }, velocityTemplateEngine);
+
     }
 
 
